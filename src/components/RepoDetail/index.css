@@ -1,0 +1,147 @@
+/* RepoDetail.css */
+.dark-container {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.repo-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.repo-card .card-header {
+  background-color: #252525;
+  border-bottom: 1px solid #333;
+  padding: 16px;
+}
+
+.repo-title {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+}
+
+.language-badge {
+  display: inline-block;
+  background-color: #2d6da3;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.text-muted-bright {
+  color: #b0b0b0;
+}
+
+.description {
+  color: #e0e0e0;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #252525;
+  border-radius: 6px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.stat-icon-container {
+  background-color: #1e1e1e;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.stat-icon {
+  font-size: 1.2rem;
+  color: #4d9aff;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.stat-label {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #333;
+  color: #e0e0e0;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: all 0.2s;
+  border: 1px solid #444;
+}
+
+.back-button i {
+  margin-right: 6px;
+  font-size: 0.9rem;
+}
+
+.back-button:hover {
+  background-color: #444;
+  color: #ffffff;
+  border-color: #555;
+}
+
+.error-card {
+  background-color: #2a1a1a;
+  border: 1px solid #3e2222;
+  color: #f5c2c2;
+}
+
+.github-button {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+  max-width: 200px;
+}
+
+.github-button:hover {
+  background-color: #1b5e20;
+  color: white;
+  text-decoration: none;
+}
+
+.card-footer {
+  background-color: #252525;
+  border-top: 1px solid #333;
+  padding: 12px;
+}
