@@ -1,12 +1,37 @@
-# React + Vite
+# GitHub Repos Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application to explore and view GoDaddy's public GitHub repositories.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/github-repos-explorer.git
+   cd github-repos-explorer
+   ```
 
-## Expanding the ESLint configuration
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+
+4. Open your browser and navigate to:
+   ```
+   http://localhost:5173
+   ```
+
+## Project Structure
+
+- `App.jsx`: Main application component with routing configuration
+- `components/RepoList`: Component to display the list of repositories
+- `components/RepoDetail`: Component to display detailed information about a specific repository
+- `context/GitHubRepoContext`: Context provider for storing repository data globally
+
+## Data Management
+
+This application uses React Context API through the `GitHubRepoContext` to store repository data centrally, eliminating the need to refetch data when navigating between pages. This improves performance and provides a smoother user experience.
