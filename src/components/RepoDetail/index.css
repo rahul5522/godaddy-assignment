@@ -1,22 +1,21 @@
-/* RepoDetail.css */
 .dark-container {
-  background-color: #121212;
+  background-color: #212529;
   color: #ffffff;
   min-height: 100vh;
   padding: 20px;
 }
 
 .repo-card {
-  background-color: #1e1e1e;
-  border: 1px solid #333;
+  background-color: #212529;
+  border: 2px solid #343a40;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-top: 20px;
 }
 
 .repo-card .card-header {
-  background-color: #252525;
-  border-bottom: 1px solid #333;
+  background-color: #212529;
+  border-bottom: 2px solid #343a40;
   padding: 16px;
 }
 
@@ -52,8 +51,9 @@
   flex-wrap: wrap;
   margin-top: 20px;
   padding: 15px;
-  background-color: #252525;
+  background-color: #212529;
   border-radius: 6px;
+  border: 1px solid #343a40;
 }
 
 .stat-item {
@@ -64,7 +64,8 @@
 }
 
 .stat-icon-container {
-  background-color: #1e1e1e;
+  background-color: #212529;
+  border: 1px solid #343a40;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -94,14 +95,14 @@
 .back-button {
   display: inline-flex;
   align-items: center;
-  background-color: #333;
+  background-color: #343a40;
   color: #e0e0e0;
   padding: 6px 12px;
   border-radius: 4px;
   text-decoration: none;
   margin-bottom: 20px;
   transition: all 0.2s;
-  border: 1px solid #444;
+  border: 1px solid #495057;
 }
 
 .back-button i {
@@ -110,9 +111,9 @@
 }
 
 .back-button:hover {
-  background-color: #444;
+  background-color: #495057;
   color: #ffffff;
-  border-color: #555;
+  border-color: #6c757d;
 }
 
 .error-card {
@@ -141,7 +142,7 @@
 }
 
 .card-footer {
-  background-color: #252525;
-  border-top: 1px solid #333;
+  background-color: #212529;
+  border-top: 2px solid #343a40;
   padding: 12px;
 }

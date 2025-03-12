@@ -1,57 +1,68 @@
-/* Custom scrollbar for Webkit browsers (Chrome, Safari, newer Edge) */
 .repo-table-container::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  
-  .repo-table-container::-webkit-scrollbar-track {
-    background: #212529;
-  }
-  
-  .repo-table-container::-webkit-scrollbar-thumb {
-    background-color: #495057;
-    border-radius: 10px;
-  }
-  
-  .repo-table-container::-webkit-scrollbar-thumb:hover {
-    background-color: #6c757d;
-  }
-  
-  /* Fixed header styles */
-  .table-header-fixed {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #212529;
-    margin-top: 0;
-    border-bottom: 2px solid #343a40;
-  }
-  
-  /* Header cells styling */
-  .table-header-fixed th {
-    background-color: #212529;
-  }
-  
-  /* Remove default Bootstrap sticky-top which might be causing the issue */
-  .table thead.sticky-top {
-    position: static;
-  }
-  
-  /* Container styling */
-  .repo-table-container {
-    height: 70vh;
-    overflow-y: auto;
-    border: 2px solid #343a40;
-    border-radius: 8px;
-    background-color: #212529;
-    /* Custom scrollbar styles for Firefox */
-    scrollbar-width: thin;
-    scrollbar-color: #495057 #212529;
-  }
-  
-  /* Table styling */
-  .repo-table {
-    min-width: 1000px;
-    width: 100%;
-    border-collapse: collapse;
-  }
+  width: 8px;
+  height: 8px;
+}
+
+.repo-table-container::-webkit-scrollbar-track {
+  background: #212529;
+}
+
+.repo-table-container::-webkit-scrollbar-thumb {
+  background-color: #495057;
+  border-radius: 10px;
+}
+
+.repo-table-container::-webkit-scrollbar-thumb:hover {
+  background-color: #6c757d;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #212529;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #495057;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #6c757d;
+}
+
+.table-header-fixed {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #212529;
+  margin-top: 0;
+  border-bottom: 2px solid #343a40;
+}
+
+.table-header-fixed th {
+  background-color: #212529;
+}
+
+.table thead.sticky-top {
+  position: static;
+}
+
+.repo-table-container {
+  height: 70vh;
+  overflow-y: auto;
+  border: 2px solid #343a40;
+  border-radius: 8px;
+  background-color: #212529;
+  scrollbar-width: thin;
+  scrollbar-color: #495057 #212529;
+}
+
+.repo-table {
+  min-width: 1000px;
+  width: 100%;
+  border-collapse: collapse;
+}
